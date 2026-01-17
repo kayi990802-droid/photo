@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>錦德猛將工程相機 A3-2</title>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="錦德相機">
+<meta name="mobile-web-app-capable" content="yes">
+
+<style>
+/* 您原本的 CSS 樣式  */
+body { margin:0; background:#000; overflow:hidden; }
+#camera { position:fixed; width:100vw; height:100vh; object-fit:cover; z-index:1; }
+#btn {
+    position:absolute; bottom:30px; left:50%;
+    transform:translateX(-50%);
+    width:90px; height:90px;
+    border-radius:50%;
+    border:6px solid #d4af37;
+    background:rgba(255,215,0,.2);
+    z-index:20;
+}
+#infoBox {
+    position:absolute; top:20px; left:20px; padding:12px 18px;
+    background:rgba(0,0,0,0.55); border:2px solid #d4af37;
+    border-radius:12px; color:#fff; font-size:18px; z-index:10;
+}
+#mapBox{
+    position:absolute; bottom:30px; right:20px; width:130px; height:130px;
+    border:3px solid #d4af37; border-radius:12px; overflow:hidden; z-index:10;
+}
+#mapImg{ width:100%; height:100%; object-fit:cover; }
+</style>
+</head>
+<body>
+
+<video id="camera" autoplay playsinline></video>
+<div id="infoBox">
+    <div id="tm">時間：讀取中…</div>
+    <div id="gps">座標：讀取中…</div>
+    <div id="alt">高度：讀取中…</div>
+    <div id="addr">地址：讀取中…</div>
+    <div>備註：#錦德防水工程</div>
+</div>
+<div id="mapBox"><img id="mapImg"></div>
+<button id="btn"></button>
+
+<script>
+/* 您原本的 JavaScript 邏輯  */
+// (包含相機啟動、時間更新、GPS 定位與拍照存檔功能)
+// 請將您 1camera.html 內的 script 內容貼回此處
+</script>
+</body>
+</html>
